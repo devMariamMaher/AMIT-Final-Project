@@ -1,0 +1,156 @@
+.featuredProducts{
+    margin-inline: 12rem;
+    margin-block: 5rem;
+    position: relative;
+
+    .slick-slider{
+        .slick-arrow{
+            display: none !important;
+        }
+    }
+
+    h1{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-family: $robotoFontFam;
+        color: $thirdColor;
+    }
+
+    .product{
+        width: auto !important;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        
+        img {
+            height: fit-content;
+        }
+    }
+    
+    .nextBtn{
+        position: absolute;
+        top: 50%;
+        right: -2.5rem;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .prevBtn{
+        position: absolute;
+        top: 50%;
+        left: -2.5rem;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+@media (max-width:991px) {
+    .featuredProducts{
+        margin-inline: 5rem;
+
+        h1{
+            font-size: 30px;
+        }
+    
+    
+        .slick-slider{
+            .slick-list{
+                .slick-track{
+                    .slick-slide{
+                        width: 15rem !important;
+
+                        .product {
+                            width: 13rem !important;
+                            margin-left: 1.5rem;
+
+                            img {
+                                height: fit-content;
+                                width: 100%;
+                            }
+
+                            .productIcons{
+                                top: 5.5rem;
+                                left: 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .nextBtn, .prevBtn{
+            width: 1.8rem;
+            height: 3.2rem;
+            background-color: white;
+        }
+
+        .nextBtn{
+            right: 1rem;
+        }
+    
+        .prevBtn{
+            left: 1rem;
+        }
+    }
+}
+
+
+
+
+
+@media (max-width:575px) {
+    .featuredProducts{
+        margin-inline: 0.6rem;
+        margin-block: 2rem;
+        position: relative;
+
+        h1{
+            font-size: 22px;
+        }
+    
+    
+        .slick-slider{
+            .slick-list{
+                .slick-track{
+                    .slick-slide{
+                        width: 22.5rem !important;
+                        margin-left: 0.5rem;
+
+                        .product {
+                            width: 22.5rem !important;
+                            margin-left: 0.1rem;
+
+                            img {
+                                height: fit-content;
+                                width: 100%;
+                            }
+
+                            .productIcons{
+                                top: 11rem;
+                                left: 5.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .nextBtn, .prevBtn{
+            width: 1.6rem;
+            height: 3rem;
+            background-color: white;
+        }
+
+        .nextBtn{
+            right: 0.5rem;
+        }
+    
+        .prevBtn{
+            left: 0.5rem;
+        }
+    }
+}

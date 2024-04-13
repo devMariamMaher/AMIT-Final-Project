@@ -1,0 +1,135 @@
+.bestSummerContainer{
+    height: 26rem;
+    display: flex;
+    background-color: #F4F9FC;
+    margin: 5rem 0;
+    position: relative;
+
+    img{
+        height: 28.8rem;
+        margin-inline: 13.5rem;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .details{
+        margin-left: 48.5rem;
+        margin-top: 7rem;
+
+        h3{
+            font-family: $poppinsFontFam;
+            font-weight: 400;
+            font-size: 16px;
+            color: $mainColor;
+            margin-bottom: 0.6rem;
+        }
+        
+        h1{
+            font-family: $robotoFontFam;
+            text-transform: capitalize;
+            color: $thirdColor;
+            margin-bottom: 1rem;
+        }
+        
+        p{
+            font-family: $robotoFontFam;
+            font-size: 20px;
+            font-weight: 500;
+            color: $thirdColor;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn{
+            width: 9.5rem;
+            background-color: transparent;
+            text-transform: capitalize;
+        }
+    }
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+    .bestSummerContainer{
+        height: 16.5rem;
+    
+        img{
+            height: 19rem;
+            margin-inline: 6rem;
+        }
+    
+        .details{
+            margin-left: 28.5rem;
+            margin-top: 2.5rem;
+    
+            h3{
+                margin-bottom: 0.6rem;
+            }
+            
+            h1{
+                margin-bottom: 1rem;
+                font-size: 30px;
+            }
+            
+            p{
+                font-size: 18px;
+                margin-bottom: 1.5rem;
+            }
+    
+            .btn{
+                width: 9.5rem;
+                border: 1px solid $mainColor;  
+                background-color: transparent;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:575px) {
+    .bestSummerContainer{
+        flex-direction: column-reverse;
+        height: fit-content;
+        margin: 0rem 0 2rem 0;
+
+        img{
+            position: unset;
+            height: fit-content;
+            width: 23rem;
+            margin: auto;
+        }
+
+        .details{
+            margin-left: 0rem;
+            margin-top: 1.5rem;
+            text-align: center;
+
+            h3{
+                font-size: 14px;
+                margin-bottom: 0.6rem;
+            }
+            
+            h1{
+                margin-bottom: 1rem;
+                font-size: 22px;
+            }
+            
+            p{
+                font-size: 16px;
+                margin-bottom: 1.5rem;
+            }
+    
+            .btn{
+                width: 8rem;
+                height: 2.7rem;
+                font-size: 14px;
+                margin-bottom: 1rem;
+            }    
+        }
+    }
+}

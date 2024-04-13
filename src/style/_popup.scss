@@ -1,0 +1,71 @@
+.popup{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+
+    span{
+        position: absolute;
+        font-size: 28px;
+        margin-top: 15px;
+        right: 260px;
+    }
+
+    img{
+        width: 260px;
+        height: 300px;
+    }
+
+    .popupInfo{
+        align-self: center;
+
+        h2{
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 15px;
+            font-family: $robotoFontFam;
+        }
+        
+        p{
+            margin: auto;
+            margin-bottom: 15px;
+            width: 350px;
+            text-align: center;
+            color: #687188;
+            font-size: 14px;
+            font-family: $poppinsFontFam;
+        }
+
+        .emailInput{
+            font-family: $poppinsFontFam;
+            font-size: 1rem;
+            border: 1px solid #dee2e6;
+            padding-left: 10px;
+            width: 100%;
+            height: 40px;
+            margin-bottom: 15px;
+        }
+        
+        .dontShow{
+            margin-top: 15px;
+            font-family: $poppinsFontFam;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            gap: 10px;
+
+            input{
+                width: 16px;
+                height: 16px;
+                margin-top: 4px;
+                cursor: pointer;
+            }
+            
+            label{
+                color: #687188;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+    }
+}

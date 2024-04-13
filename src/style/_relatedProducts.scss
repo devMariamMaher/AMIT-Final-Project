@@ -1,0 +1,111 @@
+.relatedProducts{
+    margin: 5rem 0rem 10rem 0rem;
+    margin-inline: 12rem;
+    position: relative;
+
+    
+    h1{
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+        font-family: $robotoFontFam;
+        font-size: 28px;
+        color: $thirdColor;
+    }
+
+    .slick-slider{
+        .slick-arrow{
+            display: none !important;
+        }
+        .slick-dots{
+            button:before, .slick-active button:before{
+                margin-top: 1rem;
+                font-size: 10px;
+                opacity: 1;
+
+            }
+
+            .slick-active{
+                margin-top: 1rem;
+                
+                button:before {
+                    color: $mainColor;
+                }
+            }
+            
+            button:before {
+                color: #b1b1b1;
+            }
+        }
+    }    
+}
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    .relatedProducts{
+        margin: 2.5rem 5rem 8rem 5rem;    
+        
+        h1{
+            font-size: 26px;
+        }
+
+        .slick-slider{
+            .slick-list{
+                .slick-track{
+                    .slick-slide{
+                        width: 15rem !important;
+
+                        .product {
+                            margin-left: 1.7rem;
+
+                            .productIcons{
+                                top: 5.5rem;
+                                left: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+
+
+
+
+@media (max-width:575px) {
+    .relatedProducts{
+        margin: 1rem 0.9rem 4.3rem 0.9rem;    
+        
+        h1{
+            margin-left: 0rem;
+            margin-bottom: 1rem;
+            font-size: 20px;
+        }
+
+        .slick-slider{
+            .slick-list{
+                .slick-track{
+                    .slick-slide{
+                        width: 22.5rem !important;
+                        margin-left: 0.05rem;
+
+                        .product {
+                            margin-left: 0.1rem;
+
+                            .productIcons{
+                                top: 11rem;
+                                left: 5.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}

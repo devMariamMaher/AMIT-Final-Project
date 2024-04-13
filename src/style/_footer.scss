@@ -1,0 +1,324 @@
+footer {
+    width: 100%;
+    height: 515px;
+    background-color: $secondaryColor;
+    
+    .footerTop {
+        display: flex;
+        // justify-content: space-between;
+        gap: 1.5rem;
+        padding: 0 12.5rem;
+        
+        .footerContent {
+            .footerDetails{
+                img{
+                    margin: 6.3rem 0 16px 5px;
+                }
+                
+                p{
+                    font-family: $poppinsFontFam;
+                    font-size: 14px;
+                    color: white;
+                    width: 15rem;
+                    line-height: 1.7rem;
+                }
+                
+            }
+            .allMediaIcons{
+                font-size: 16px;
+                color: white;
+                margin-inline: 1rem;
+                margin-top: 2.5rem;
+                
+                .mediaIcons{
+                    margin-right: 2rem;
+                    transition: 0.3s;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+            }
+            
+            h4 {
+                font-family: $robotoFontFam;
+                font-size: 18px;
+                color: white;
+                margin-bottom: 1.5rem;
+                margin-top: 7.4rem;
+                margin-right: 4.5rem;
+            }
+            
+            .footerList {
+                font-family: $poppinsFontFam;
+                list-style-type: none;
+                color: white;
+                
+                li {
+                    font-size: 14px;
+                    margin-bottom: 1rem;
+                    width: 7rem;
+                    transition: 0.3s;
+                    
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+                
+                a {
+                    color: inherit;
+                }
+            }
+            
+            .contactDetails{
+                font-family: $poppinsFontFam;
+                font-size: 14px;
+                color: white;
+                margin-left: 2rem;
+                line-height: 1.7rem;
+                
+                p{
+                    position: relative;
+                    margin-bottom: 1rem;
+                    width: 13rem;
+                }
+                
+                a{
+                    color: inherit;
+                    transition: 0.3s;
+                    
+                    &:hover {
+                        color: $mainColor; // Apply hover effect only to the first <a>
+                    }
+                }         
+                
+                span{
+                    font-size: 20px;
+                    position: absolute;
+                    top: 0.2rem;
+                    left: -2rem;
+                }
+            }
+        }
+    }
+
+    .footerBottom{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #37393B;
+        font-family: $poppinsFontFam;
+        color: white;
+        margin-top: 4.7rem;
+
+        .copyRights{
+            font-size: 14px;
+            margin-top: 35px;
+            margin-inline: 14rem;
+            position: relative;
+        } 
+
+        .copyRightIcon{
+            position: absolute;
+            top: 3px;
+            left: -20px;
+        }
+
+        .creditCardIcons{
+            margin-inline: 12rem;
+            margin-top: 32px;
+            cursor: pointer;
+
+            span{
+                margin-inline: 2px;
+            }
+        } 
+    }
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+    footer {
+        width: 100%;
+        height: fit-content;
+        padding-top: 5rem;
+        padding-inline: 1rem;
+        
+        .footerTop {
+            flex-wrap: wrap;
+            column-gap: 1.7rem;
+            row-gap: 0.5rem;
+            padding: 0 4.5rem;
+
+            .footerContent {
+                .footerDetails{
+                    img{
+                        margin: 0rem 0 16px 5px;
+                    }
+                    
+                    p{
+                        width: 21rem;
+                    }
+                }
+
+                .allMediaIcons{
+                    margin-inline: 1rem;
+                    margin-top: 2rem;
+                    
+                    .mediaIcons{
+                        margin-right: 1.5rem;
+                    }
+                }
+                
+                h4 {
+                    margin-top: 1rem;
+                }
+                
+                .footerList {
+                    li {
+                        margin-bottom: 0.8rem;
+                    }
+                }
+                
+                .contactDetails{
+                    margin-left: 2rem;
+                    line-height: 1.7rem;
+                    
+                    p{
+                        position: relative;
+                        margin-bottom: 1rem;
+                        width: 13rem;
+                    }
+                    
+                    a{
+                        color: inherit;
+                        transition: 0.3s;
+                        
+                        &:hover {
+                            color: $mainColor; // Apply hover effect only to the first <a>
+                        }
+                    }         
+                    
+                    span{
+                        font-size: 20px;
+                        position: absolute;
+                        top: 0.2rem;
+                        left: -2rem;
+                    }
+                }
+
+                &:last-child {
+                    margin-left: 10rem;
+                }
+            }
+        }
+    
+        .footerBottom{
+            justify-content: flex-start;
+            gap: 5rem;
+            padding: 0 0 1rem 6rem;
+            margin-top: 4rem;
+
+            .copyRights{
+                margin-top: 35px;
+                margin-inline: 0rem;
+            }    
+    
+            .creditCardIcons{
+                margin-inline: 0px;
+                margin-top: 32px;
+            } 
+    
+        }
+    }    
+
+}
+
+
+
+
+
+
+@media (max-width:575px) {
+    footer {
+        width: 100%;
+        height: fit-content;
+        padding-top: 0rem;
+        
+        .footerTop {
+            display: unset;
+
+            .footerContent {
+                margin-left: 0rem;
+
+                .footerDetails{
+                    img{
+                        margin: 1rem 0 16px 0px;
+                    }
+                    
+                    p{
+                        width: fit-content;
+                        line-height: 1.5rem;
+                    }
+                }
+
+                .allMediaIcons{
+                    margin-top: 2rem;
+                    
+                    .mediaIcons{
+                        margin-right: 1.5rem;
+                    }
+                }
+                
+                h4 {
+                    margin-bottom: 1rem;
+                    margin-top: 2rem;
+                }
+                
+                .footerList {
+                    li {
+                        margin-bottom: 0.5rem;
+                    }
+                }
+
+                &:last-child {
+                    margin-left: 0rem;
+                }
+            }
+        }
+    
+        .footerBottom{
+            display: flex;
+            flex-direction: column;
+            gap: 0rem;
+            border-top: 1px solid #37393B;
+            margin-top: 0.5rem;
+            padding: 0;
+            
+            .copyRights{
+                text-align: center;
+                font-size: 14px;
+                margin-top: 1rem;
+                margin-inline: 0.5;
+                position: relative;
+            } 
+    
+            .copyRightIcon{
+                position: absolute;
+                top: 0.2rem;
+                left: 0.5rem;
+            }
+    
+            .creditCardIcons{
+                margin: auto;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                cursor: pointer;
+            } 
+        }
+    }    
+}    

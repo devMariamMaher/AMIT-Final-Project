@@ -1,0 +1,38 @@
+.allProducts{
+    margin: 2rem 0 6.5rem 0;
+    margin-inline: 12rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 0.5rem;
+    row-gap: 2rem;
+}
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+    .allProducts{
+        margin: 2rem 0 3rem 0;
+        margin-inline: 5.2rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }    
+}
+
+
+
+
+
+@media (max-width:575px) {
+    .allProducts{
+        margin: 2rem 0 2rem 0;
+        margin-inline: 0.7rem;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 1.5rem;
+        row-gap: 2rem;
+    }    
+}    

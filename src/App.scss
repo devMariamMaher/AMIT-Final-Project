@@ -1,0 +1,96 @@
+@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "./style/_popup.scss";
+@import "./style/_topbar.scss";
+@import "./style/pages/authentication";
+@import "./style/navbar";
+@import "./style/pages/cart";
+@import "./style/headerSlider";
+@import "./style/secondSection";
+@import "./style/exclusiveProducts";
+@import "./style/epProductsGrid";
+@import "./style/card";
+@import "./style/pages/productDetails";
+@import "./style/relatedProducts";
+@import "./style/bestSummer";
+@import "./style/reviews";
+@import "./style/deliverySection";
+@import "./style/newsletter";
+@import "./style/footer";
+@import "./style/featuredProducts";
+@import "./style/breadcrumb";
+@import "./style/loading";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.btn{
+  position: relative;
+  width: 9.5rem;
+  height: 50px;
+  color: white;
+  border: 1px solid $mainColor;  
+  background-color: white;
+  font-family: $poppinsFontFam;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.4s ease-in-out;
+  overflow: hidden;
+
+  &:hover::before{
+    left: -200px;
+  }
+
+  &:hover::after{
+    right: -200px;
+  }
+
+  &:hover{
+    color: $mainColor;
+  }
+}
+
+.btn::before{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50px;
+  background-color: $mainColor;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.4s ease-in-out;
+}
+
+.btn::after{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50px;
+  background-color: $mainColor;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.4s ease-in-out;
+}
+
+.validationError{
+  color: rgb(229, 0, 0);
+  font-family: $poppinsFontFam;
+  font-size: 14px;
+  margin-top: 0.5rem;
+}

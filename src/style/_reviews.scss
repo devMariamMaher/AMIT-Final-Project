@@ -1,0 +1,171 @@
+.reviewsContainer{
+    width: 100%;
+    height: 26.8rem;
+    background-color: #FFF1F1;
+    padding-top: 6rem;
+    position: relative;
+
+    .slick-slider{
+        width: 45rem;
+        margin: auto;
+        overflow: hidden;
+        cursor: grab;
+
+        .slick-arrow{
+            display: none !important;
+        }
+    }
+
+    h1, p{
+        margin-bottom: 1.7rem;
+        text-align: center;
+    }
+    
+    h1{
+        font-family: $robotoFontFam;
+    }
+    
+    .eachSlide{
+        p{
+            font-family: $poppinsFontFam;
+            line-height: 1.75rem;
+            color: #687188;
+        }
+
+        .user{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            .userDetails{
+                margin-top: 0.3rem;
+
+                h4{
+                    margin-bottom: 0.3rem;
+                    font-family: $robotoFontFam;
+                    font-weight: 500;
+                }
+
+                span{
+                    font-family: $poppinsFontFam;
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+
+    .nextBtn, .prevBtn{
+        position: absolute;
+        top: 65%;
+        font-size: 26px;
+        cursor: pointer;
+    }
+    
+    .nextBtn{
+        right: 22rem;
+    }
+
+    .prevBtn{
+        left: 22rem;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+    .reviewsContainer{
+        padding-top: 5.5rem;
+    
+        .slick-slider{
+            width: 36rem;
+        }
+    
+        h1, p{
+            margin-bottom: 1.7rem;
+        }
+        
+        h1{
+            font-size: 30px;
+        }
+        
+        .eachSlide{
+            p{
+                margin-bottom: 1.5rem;
+            }
+            .user{
+                .userDetails{
+                    margin-top: 0.3rem;
+                }
+            }
+        }
+    
+        .nextBtn, .prevBtn{
+            top: 70%;
+            font-size: 26px;
+        }
+        
+        .nextBtn{
+            right: 6.5rem;
+        }
+    
+        .prevBtn{
+            left: 6.5rem;
+        }
+    }    
+}
+
+
+
+
+@media (max-width:575px) {
+    .reviewsContainer{
+        height: 19rem;
+        padding-top: 2rem;
+    
+        .slick-slider{
+            width: 23rem;
+        }
+    
+        h1, p{
+            margin-bottom: 1rem;
+        }
+        
+        h1{
+            font-size: 22px;
+        }
+        
+        .eachSlide{
+            p{
+                font-size: 14px;
+                line-height: 1.5rem;
+                margin-bottom: 1.3rem;
+            }
+    
+            .user{
+                .userDetails{
+                    margin-top: 0.6rem;
+    
+                    h4, span{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    
+        .nextBtn, .prevBtn{
+            top: 75%;
+            font-size: 24px;
+        }
+        
+        .nextBtn{
+            right: 1.5rem;
+        }
+    
+        .prevBtn{
+            left: 1.5rem;
+        }
+    }
+}

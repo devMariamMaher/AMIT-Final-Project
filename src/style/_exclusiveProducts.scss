@@ -1,0 +1,86 @@
+.exclusiveProducts{
+    margin-top: 6rem;
+    h1{
+        text-align: center;
+        font-family: $robotoFontFam;
+        color: $thirdColor;
+    }
+    
+    .categories{
+        ul{
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+        }
+        
+        li{
+            font-family: $poppinsFontFam;
+            font-size: 16px;
+            font-weight: 500;
+            a{
+                color: $thirdColor;
+                transition: 0.3s;
+                cursor: pointer;
+    
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+            
+            &.active a{
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+    .exclusiveProducts{
+        margin-top: 5rem;
+        h1{
+            font-size: 30px;
+        }
+        
+        .categories{
+            ul{
+                margin-top: 1.5rem;
+            }
+
+            li{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width:575px) {
+    .exclusiveProducts{
+        margin-top: 2rem;
+        h1{
+            font-size: 22px;
+        }
+        
+        .categories{
+            ul{
+                flex-wrap: wrap;
+                row-gap: 0.8rem;
+                column-gap: 1.5rem;
+                margin-inline: 1rem;
+            }
+            
+            li{
+                font-size: 14px;
+            }
+        }
+    }    
+}

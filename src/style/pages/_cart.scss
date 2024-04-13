@@ -1,0 +1,461 @@
+.cartPage{
+    .cartContainer{
+        margin: 2rem 10rem;
+        
+        h1{
+            font-family: $robotoFontFam;
+            font-size: 28px;
+            font-weight: 500;
+            color: $thirdColor;
+            margin-inline: 5rem;
+        }
+    
+        .emptyCart{
+            margin-top: 5rem;
+            img{
+                height: 20rem;
+                margin-inline: 30%;
+            }
+            
+            h2{
+                font-family: $poppinsFontFam;
+                font-size: 22px;
+                font-weight: 400;
+                color: $thirdColor;
+                text-align: center;
+            }
+        }
+        
+        .eachProduct{
+            margin: 2rem 5rem;
+            display: flex;
+            flex-direction: column;
+    
+    
+            .row{
+                border-bottom: 1px solid #DDDDDD;
+                display: flex;
+                justify-content: center;
+                flex-wrap: nowrap;
+                width: fit-content;
+                
+                .eachProductImg{
+                    margin-right: 1rem;
+                    img{
+                        height: 10rem;
+                    }
+                }
+                
+                .eachProductImg, .eachProductContent{
+                    padding-bottom: 2rem;
+                }
+        
+                .eachProductContent, .eachQuantityPrice{
+                    display: flex;
+                    gap: 9.8rem;
+                }
+                
+                .eachProductContent{
+                    font-family: $poppinsFontFam;
+                    .eachProductDetails{
+                        h3{
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: $thirdColor;
+                            margin: 0.5rem 0;
+                        }
+                        
+                        p{
+                            font-size: 14px;
+                            color: #687188;
+                            margin-bottom: 0.5rem;
+                            width: 20rem;
+                        }
+    
+                        .productSize{
+                            font-size: 16px;
+                            color: $thirdColor;
+    
+                            span{
+                                font-weight: 500;
+                            }
+                        }
+                        
+                        .productPrices{
+                            margin-top: 0.5rem;
+                            
+                            span{
+                                margin-right: 0.5rem;
+                            }
+    
+                            .currentPrice{
+                                font-size: 18px;
+                                font-weight: 600;
+                                color: $mainColor;
+                            }
+                
+                            .oldPrice{
+                                font-size: 14px;
+                                color: #687188;
+                                text-decoration: line-through;
+                            }
+                
+                            .discount{
+                                font-size: 14px;
+                                color: #388e3c;
+                            }
+                        }
+                        
+                    }
+                    
+                    .eachQuantityPrice{
+                        display: flex;
+                        align-items: center;
+            
+                        .eachProductQuantity{
+                            display: flex;
+                            button{
+                                width: 1.8rem;
+                                height: 1.8rem;
+                                border: none;
+                                border-radius: 50%;
+                                background-color: #eee;
+                                font-size: 20px;
+                                cursor: pointer;
+                            }
+            
+                            span{
+                                font-family: $poppinsFontFam;
+                                font-size: 16px;
+                                border: 1px solid #DDDDDD;
+                                padding: 0.2rem 1rem;
+                                margin-inline: 0.5rem;
+                            }
+                            
+                            .trashIcon{
+                                border: none;
+                                padding: 0.1rem 1rem;
+                                font-size: 20px;
+                                transition: 0.3s;
+                                cursor: pointer;
+        
+                                &:hover{
+                                    color: $mainColor;
+                                }
+                            }
+                        }
+        
+                        .eachProductPrice{
+                            color: $thirdColor;
+                            p{
+                                display: flex;
+                                gap: 0.3rem;
+                                span{
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .totalPrice{
+            font-family: $poppinsFontFam;
+            display: flex;
+            justify-content: flex-end;
+            margin: 2rem 4rem 0;
+            
+            span{
+                font-weight: 600;
+            }
+        }
+    
+        .checkoutSection{
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 4rem 0 5rem;
+    
+            .promoCodeForm{
+                input{
+                    width: 28rem;
+                    height: 3.2rem;
+                    font-family: $poppinsFontFam;
+                    font-size: 16px;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 0.5rem;
+                    outline: none;
+                    padding-inline: 1rem;
+                }
+    
+                .btn{
+                    width: 10rem;
+                    height: 50px;
+                    border-radius: 0.3rem;
+                    text-transform: capitalize;
+                    margin-left: 1rem;
+                }
+            }
+            
+            .checkoutBtn{
+                .btn{
+                    width: 10rem;
+                    height: 50px;
+                    border-color: $thirdColor;
+                    border-radius: 0.3rem;
+                    text-transform: capitalize;
+                    
+                    &::before, &::after{
+                        background-color: $thirdColor;
+                    }
+                    
+                    &:hover::before{
+                        left: -200px;
+                    }
+                    
+                    &:hover::after{
+                        right: -200px;
+                    }
+    
+                    &:hover{
+                        color: $thirdColor;
+                    }                
+                }
+            }
+        }
+    
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    .cartPage{
+        .cartContainer{
+            margin: 2rem 2rem;
+            
+            h1{
+                font-size: 26px;
+                margin-left: 4rem;
+            }
+        
+            .emptyCart{
+                margin-top: 2rem;
+                img{
+                    height: 16rem;
+                    margin-inline: 31%;
+                }
+                
+                h2{
+                    font-size: 22px;
+                }
+            }
+            
+            .eachProduct{
+                margin: 2rem 4rem;    
+        
+                .row{
+                    .eachProductContent, .eachQuantityPrice{
+                        gap: 2rem;
+                    }
+                    
+                    .eachProductContent{
+                        .eachProductDetails{
+                            p{
+                                width: 14rem;
+                            }
+    
+                            .productPrices{
+                                margin-right: 0rem;
+    
+                                .currentPrice{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        
+                        .eachQuantityPrice{
+                            .eachProductPrice{
+                                margin-right: 0rem;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        
+            .totalPrice{
+                font-family: $poppinsFontFam;
+                display: flex;
+                justify-content: flex-end;
+                margin: 2rem 3rem 0;
+                
+                span{
+                    font-weight: 600;
+                }
+            }
+    
+            .checkoutSection{
+                display: flex;
+                justify-content: space-between;
+                margin: 2rem 3rem 0 4.1rem;
+        
+                .promoCodeForm{
+                    input{
+                        width: 20rem;
+                    }
+        
+                    .btn{
+                        width: 8.5rem;
+                    }
+                }
+            }
+        
+        
+        }
+    }
+}
+
+
+
+
+@media (max-width:575px) {
+    .cartPage{
+        .cartContainer{
+            margin: 1rem 1rem;
+            
+            h1{
+                font-size: 20px;
+                margin-left: 1rem;
+            }
+        
+            .emptyCart{
+                margin-top: 2rem;
+                img{
+                    height: 10rem;
+                    margin-inline: 20%;
+                }
+                
+                h2{
+                    font-size: 16px;
+                }
+            }
+            
+            .eachProduct{
+                margin: 1rem 1rem;
+                display: flex;
+                flex-direction: column;
+        
+                .row{
+                    .eachProductImg{
+                        img{
+                            height: 7rem;
+                        }
+                    }
+                    
+                    .eachProductImg, .eachProductContent{
+                        padding-bottom: 1rem;
+                    }
+            
+                    .eachProductContent, .eachQuantityPrice{
+                        display: block;
+                        gap: 0rem;
+                    }
+                    
+                    .eachProductContent{
+                        position: relative;
+                        .eachProductDetails{
+                            width: 5rem;
+                            h3{
+                                font-size: 14px;
+                                width: 20rem;
+                            }
+                            
+                            p{
+                                display: none;
+                            }
+        
+                            .productSize{
+                                font-size: 14px;
+                                display: block;
+                            }
+                            
+                            .productPrices{
+                                display: none;
+                            }
+                        }
+                        
+                        .eachQuantityPrice{  
+                            margin-top: 1rem;
+                            .eachProductQuantity{
+                                button{
+                                    width: 1.5rem;
+                                    height: 1.5rem;
+                                    font-size: 18px;
+                                }
+                
+                                span{
+                                    font-size: 14px;
+                                    padding: 0.1rem 0.8rem ;
+                                    height: 1.6rem;
+                                }
+                                
+                                .trashIcon{
+                                    position: absolute;
+                                    padding: 0.1rem 1rem;
+                                    top: 0.5rem;
+                                    right: -1.5rem;
+                                }
+                            }
+            
+                            .eachProductPrice{
+                                margin-right: 0;
+                                margin-left: 2rem;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        
+            .totalPrice{
+                font-size: 14px;
+                margin: 1rem 1.8rem 0;
+            }
+        
+            .checkoutSection{
+                display: block;
+                margin: 1rem 1.7rem 0 1rem;
+        
+                .promoCodeForm{
+                    display: flex;
+                    justify-content: center;
+                    input{
+                        width: 12rem;
+                        font-size: 16px;
+                    }
+        
+                    .btn{
+                        width: 8rem;
+                        font-size: 14px;
+                        margin-left: 0.5rem;
+                    }
+                }
+        
+                .checkoutBtn{
+                    .btn{
+                        width: 100%;
+                        font-size: 14px;
+                        margin-top: 1rem;
+                        margin-inline: 0;
+                    }
+                }
+            }
+        
+        }
+    }
+}

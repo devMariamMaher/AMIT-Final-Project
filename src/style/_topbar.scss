@@ -1,0 +1,145 @@
+.topBar{
+    padding-top: 15px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #EEEEEE;
+    display: flex;
+    justify-content: space-around;
+    gap: 15rem;
+    
+    .eachPart{
+        display: flex;
+        gap: 10px;
+        
+        li{
+            display: flex;
+            font-family: $poppinsFontFam;
+            font-size: 14px;
+        }
+
+        .leftSec{
+            position: relative;
+            cursor: pointer;
+            transition: 0.4s;
+            
+            
+            &:hover .dropdown{
+                display: block;
+            }
+            
+            .elementHover{
+                transition: 0.3s ease-in-out;
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+        }
+        
+        .arrowIcon{
+            margin-top: 3px;
+            margin-inline: 2px;
+            color: #878787;
+        }
+        
+        .dropdown{
+            position: absolute;
+            border: 2px solid #EEEEEE;
+            background-color: white;
+            padding: 5px;
+            top: 1.5rem;
+            display: none;
+            z-index: 1000;
+            
+            li{
+                transition: 0.3s ease-in-out;
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+        }
+        
+        .countryDrop{
+            width: 150px;
+            left: 35px;
+        }
+
+        .currencyDrop{
+            width: 60px;
+            padding-inline: 15px;
+            left: 10px;
+        }
+
+        .eachItem{
+            margin-bottom: 8px;
+        }
+
+        img{
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            margin-inline: 5px;
+            margin-top: 2px;
+        }
+        
+        
+        .phoneIcon, .compareIcon, .wishlistIcon{
+            margin-inline: 5px;
+            font-size: 16px;
+        }
+        
+        .loginIcon{
+            font-size: 14px;
+            margin-top: 2px;
+            margin-inline: 5px;
+        }
+
+    }
+
+    .topBarHover{
+        li, a{
+            cursor: pointer;
+            transition: 0.4s;
+            
+            &:hover{
+                color: $mainColor;
+            } 
+        }
+        
+        li{
+            a{
+                color: black;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 991px) {
+    .topBar{
+        gap: 0;
+    }
+}
+
+
+@media (max-width:575px) {
+    .topBar{
+        display: block;
+        height: 4.5rem;
+        
+        .eachPart{
+            justify-content: center;
+            gap: 0.8rem;
+
+            &:nth-child(2){
+                margin-top: 5px;
+            }
+
+            .arrowIcon{
+                margin-left: 4px;
+            }
+        }
+    }
+}

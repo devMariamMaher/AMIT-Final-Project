@@ -1,0 +1,119 @@
+.allServices{
+    height: 21.5rem;
+    margin-inline: 14.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .eachServices:not(:last-child) {
+        position: relative;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            height: 70%;
+            width: 1px;
+            background-color: #DDDDDD;
+            top: 1.5rem;
+            right: -25px;
+        }
+
+        
+    }
+    
+    .eachIcon{
+        text-align: center;
+        font-size: 50px;
+        color: #687188;
+    }
+    
+    .details{
+        text-align: center;
+        
+        h3{
+            font-family: $robotoFontFam;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        
+        p{
+            font-family: $poppinsFontFam;
+            font-size: 16px;
+            color: #687188;
+            line-height: 1.7rem;
+            width: 20rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+    .allServices{
+        height: fit-content;
+        margin: 5rem 6rem;
+        flex-direction: column;
+        gap: 2rem;
+
+        .eachServices:not(:last-child) {        
+            &::before {
+                position: unset;
+            }   
+        }
+
+        .eachIcon{
+            font-size: 42px;
+        }    
+
+        .details{            
+            h3{
+                font-size: 18px;
+            }
+            
+            p{
+                font-size: 16px;
+                width: fit-content;
+            }
+        }    
+    }    
+}
+
+
+
+
+
+@media (max-width:575px) {
+    .allServices{
+        flex-direction: column;
+        gap: 1rem;
+        margin: 2rem 6rem;
+
+        .eachServices:not(:last-child) {        
+            &::before {
+                position: unset;
+            }   
+        }
+
+        .eachIcon{
+            font-size: 42px;
+        }    
+
+        .details{
+            text-align: center;
+            
+            h3{
+                font-size: 16px;
+            }
+            
+            p{
+                font-size: 14px;
+                width: 20rem;
+            }
+        }    
+    }
+}    
